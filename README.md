@@ -14,4 +14,4 @@ Stepped Sizes:
 - 209 x 335
 - 444 x 710
 
-![ratio](images/size-ex.svg)
+![ratio](images/size-ex.png)
