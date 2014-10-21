@@ -9,8 +9,10 @@ body {
 }
 
 .hero-spacer {
-    margin-top: 50px;
+    margin-top: 30px;
 }
+
+.jumbotron {padding-top: 24px; padding-bottom:24px;}
 
 .hero-feature {
     margin-bottom: 30px;
