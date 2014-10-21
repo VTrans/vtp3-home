@@ -16,7 +16,6 @@ body {
 
 .hero-feature {
     margin-bottom: 10px;
-	width:20%;
 }
 
 .featureContent {display:none; border:solid 1px gray; margin: 0px 15px;}
@@ -24,3 +23,17 @@ body {
 footer {
     margin: 50px 0;
 }
+
+#temp {display:none; width:1px;}
+
+
+@media (min-width: 768px){	
+	#temp {display:none; width:2px;}
+}
+
+@media (min-width: 992px){
+	.col-md-3 {width: 20%;}
+	#temp {display:none; width:3px;}
+}
+
+#slider {width:100%;}
