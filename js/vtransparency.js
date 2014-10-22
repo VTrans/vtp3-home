@@ -93,7 +93,7 @@ $( document ).ready(function() {
 			isOpen = true;
 		});	
 		$('html, body').animate({
-			scrollTop: $("#" + openedItem).offset().top - 60
+			scrollTop: $("#" + node.id).offset().top - 160
 		}, 1000);
 	}
 
