@@ -26,4 +26,9 @@ $( document ).ready(function() {
 		}, 1000);
 	});
 	
+	$(".backtop").click(function() {
+		$('html, body').animate({
+			scrollTop: $("body").offset().top
+		}, 400);
+	});
 });
