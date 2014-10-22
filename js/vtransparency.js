@@ -105,15 +105,17 @@ $( document ).ready(function() {
 	// so we can insert this as the next sibling.
 	function findSpot(num){
 		if (elemsPerLine == 5){
-			return (5 - (num%5))		
+			if (num%5 == 0)
+				return 0;
+			else
+				return (5 - (num%5));	
 		}
 		else if(elemsPerLine == 2){
 			return num%2;		
 		}
 		else{
 			return 0;		
-		}
-		
+		}		
 	}
 
 	
