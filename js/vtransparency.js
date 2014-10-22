@@ -17,6 +17,7 @@ $( document ).ready(function() {
 		elemsPerLine = temp;
 	});
 	
+	
 
 	//when a box is clicked
 	$( "#contentFeatures > div" ).click(function() {
