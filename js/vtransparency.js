@@ -11,6 +11,9 @@ $( document ).ready(function() {
 		if (temp == elemsPerLine && isOpen){
 			isOpen = false;
 			$("#slider > div").css("display","none");
+			$("#slider > div").removeClass (function (index, css) {
+					return (css.match (/(^|\s)arrow_box\S+/g) || []).join(' ');
+				});
 			$("#slider > div").appendTo("#sliderContent");	
 			$("#slider").remove();				
 		}
@@ -33,6 +36,9 @@ $( document ).ready(function() {
 			$("#slider > div").slideToggle( "fast", function() {
 				isOpen = false;
 				$("#slider > div").css("display","none");
+				$("#slider > div").removeClass (function (index, css) {
+					return (css.match (/(^|\s)arrow_box\S+/g) || []).join(' ');
+				});
 				$("#slider > div").appendTo("#sliderContent");	
 				$("#slider").remove();
 			});	
@@ -42,6 +48,9 @@ $( document ).ready(function() {
 			$("#slider > div").slideToggle( "fast", function() {
 				isOpen = false;
 				$("#slider > div").css("display","none");
+				$("#slider > div").removeClass (function (index, css) {
+					return (css.match (/(^|\s)arrow_box\S+/g) || []).join(' ');
+				});
 				$("#slider > div").appendTo("#sliderContent");	
 				$("#slider").remove();
 			
@@ -78,7 +87,8 @@ $( document ).ready(function() {
 		
 		
 		$("<div id='slider' class='col-md-3 col-sm-6 hero-feature'></div>").insertAfter(elem);
-		$("#" + node.id).appendTo("#slider");		
+		$("#" + node.id).appendTo("#slider");
+		$("#" + node.id).addClass( "arrow_box" + elemsPerLine + spot );
 		$("#slider > div").slideToggle( "fast", function() {
 			isOpen = true;
 		});	

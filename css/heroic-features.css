@@ -18,7 +18,7 @@ body {
     margin-bottom: 10px;
 }
 
-.featureContent {display:none; border:solid 1px gray; margin: 0px 15px;}
+.featureContent {display:none;  margin: 0px 15px; padding:8px;}
 
 footer {
     margin: 50px 0;
@@ -37,3 +37,53 @@ footer {
 }
 
 #slider {width:100%;}
+
+
+/************************* arrow box stuff ****************************************************/
+.arrow_box10,.arrow_box20,.arrow_box21,.arrow_box50,.arrow_box51,.arrow_box52,.arrow_box53,.arrow_box54 {
+	position: relative;
+	background: #eee;
+	border: 2px solid #ccc;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.arrow_box10:after ,.arrow_box20:after ,.arrow_box21:after ,.arrow_box50:after ,
+.arrow_box51:after ,.arrow_box52:after ,.arrow_box53:after ,.arrow_box54:after , 
+.arrow_box10:before ,.arrow_box20:before ,.arrow_box21:before ,.arrow_box50:before ,
+.arrow_box51:before ,.arrow_box52:before ,.arrow_box53:before,.arrow_box54:before
+{
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.arrow_box10:after ,.arrow_box20:after ,.arrow_box21:after ,.arrow_box50:after ,
+.arrow_box51:after ,.arrow_box52:after ,.arrow_box53:after ,.arrow_box54:after
+ {
+	border-color: rgba(13, 51, 54, 0);
+	border-bottom-color: #eee;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.arrow_box10:before ,.arrow_box20:before ,.arrow_box21:before ,.arrow_box50:before ,
+.arrow_box51:before ,.arrow_box52:before ,.arrow_box53:before,.arrow_box54:before
+{
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #ccc;
+	border-width: 24px;
+	margin-left: -24px;
+}
+
+.arrow_box10:after, .arrow_box10:before {left: 50%;}
+.arrow_box20:after, .arrow_box20:before {left: 75%;}
+.arrow_box21:after, .arrow_box21:before {left: 25%;}
+.arrow_box50:after, .arrow_box50:before {left: 90%;}
+.arrow_box51:after, .arrow_box51:before {left: 70%;}
+.arrow_box52:after, .arrow_box52:before {left: 50%;}
+.arrow_box53:after, .arrow_box53:before {left: 30%;}
+.arrow_box54:after, .arrow_box54:before {left: 10%;}
+/************************* end arrow box stuff ****************************************************/
