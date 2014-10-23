@@ -174,7 +174,7 @@ p.copyright {
 .contentText p {margin-bottom:0px;}
 
 .contentTopLeft { width:58%; float:left;}
-.contentTopRight { width:42%; float:left; text-align:right;}
+.contentTopRight { width:42%; float:left; text-align:right; margin-bottom:5px;}
 .topRightIcons {float:right; margin-left:8px;}
 .contentMaps {width:50%; float:left;}
 .contentReports {width:50%; float:left;}
@@ -183,6 +183,8 @@ p.copyright {
 .fawebsite {color:#09F;}
 .topRightIcons {text-align:center;}
 .topRightIcons span {font-size:.8em;}
+.contentMaps {float:left;min-width:250px;}
+.contentReports {float:left;min-width:250px;}
 
 .mapsHeader {
 	color:white;
