@@ -169,3 +169,35 @@ p.copyright {
 .list-inline>li {padding-top:10px;}
 
 .toTopMargin {margin-bottom:-18px;}
+
+.contentText {width:100%; float:left; margin-bottom:10px;}
+.contentText p {margin-bottom:0px;}
+
+.contentTopLeft { width:58%; float:left;}
+.contentTopRight { width:42%; float:left; text-align:right;}
+.topRightIcons {float:right; margin-left:8px;}
+.contentMaps {width:50%; float:left;}
+.contentReports {width:50%; float:left;}
+.fadatabase {color:#F90;}
+.fauser {color:#F09;}
+.fawebsite {color:#09F;}
+.topRightIcons {text-align:center;}
+.topRightIcons span {font-size:.8em;}
+
+.mapsHeader {
+	color:white;
+	width:90%;
+	background: url(../img/mapsbg.png);
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+	margin: 8px 0px;
+}
+
+.reportsHeader {
+	color:white;
+	width:90%;
+	background: url(../img/reportsbg.png);
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+	margin: 8px 0px;
+}
