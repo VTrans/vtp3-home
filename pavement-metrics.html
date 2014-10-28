@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VTransparency</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="padding: 0 10px;" href="#"><img src='img/VTransLogo.png' height="50px" alt="VTrans" /></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">About</a>
+                    </li>              
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+					<li>
+                        <a href="http://511vt.com" target="_blank">511</a>
+                    </li>
+					<li>
+                        <a href="http://vermont.gov" target="_blank" >Vermont.gov</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header -->
+    <div class="intro-header">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>VTransparency</h1>
+                        <h3>VTrans Information Portal</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="#" id="btnPavement" class="btn btn-default btn-lg"><i class="fa fa-road fa-fw"></i> <span class="network-name">Pavement</span></a>
+                            </li>
+                            <li>
+                                <a href="#" id="btnProjects" class="btn btn-default btn-lg"><i class="fa fa-tachometer fa-fw"></i> <span class="network-name">Projects</span></a>
+                            </li>
+                            <li>
+                                <a href="#" id="btnWho" class="btn btn-default btn-lg"><i class="fa fa-phone-square fa-fw"></i> <span class="network-name">Who Do I call?</span></a>
+                            </li>
+							<li>
+                                <!--<a href="#" id="btnBridge" class="btn btn-default btn-lg"><i class="fa fa-car fa-fw"></i> <span class="network-name">Bridge</span></a>-->
+                                <a href="#" id="btnBridge" class="btn btn-default btn-lg">                                	
+                                <img src="img/bridge.png" height="18px" style="margin-top: -5px; padding-right: 4px;">
+                                <span class="network-name">Bridge</span></a>
+                            </li>
+                            <li>
+                                <a href="#" id="btnOps" class="btn btn-default btn-lg"><i class="fa fa-wrench fa-fw"></i> <span class="network-name">Maintenance</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+    <div class="content-section-a" id="pavement">
+        <div class="container">
+            <h1>Pavement Condition Categories</h1>
+            <iframe src="http://vtransparency.vtrans.opendata.arcgis.com/datasets/8766003eba864b45b04d33a24ac7de54_1?uiTab=charts&amp;selectedAttributes%5B%5D=CONDITION_CATEGORY&amp;chartType=bar&amp;chartColor=%23f07&amp;chartEmbed=true" style="width: 100%; height: 500px;" seamless='seamless'></iframe>
+
+            <h1>Projects by Program</h1>
+            <iframe src="http://vtransparency.vtrans.opendata.arcgis.com/datasets/47ea5cf0dea04afd8dac435463273a00_1?selectedAttributes%5B%5D=Program&amp;chartType=bar&amp;chartColor=%2309F&amp;chartEmbed=true" style="width: 100%; height: 500px;" seamless='seamless'></iframe>
+
+        </div>
+
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class='backtop'>Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>                        
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+						<li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a target="_blank" href="http://vermont.gov">Vermont.gov</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small" style="text-align:center;">A Vermont Government Website <a target="_blank" href="http://www.vermont.gov/portal/policies/">Copyright © 2014 State of Vermont</a>. All rights reserved<br /><a target="_blank" href="http://www.vermont.gov/portal/policies/accessibility.php">Accessibility Policy</a> &bull; <a target="_blank" href="http://www.vermont.gov/portal/policies/privacy.php">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- custom -->
+    <script src="js/vtransparency.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-56064749-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	
+</body>
+
+</html>
