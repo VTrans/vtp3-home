@@ -28,6 +28,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="Chart.js"></script>
+
 </head>
 
 <body>
@@ -210,7 +212,7 @@
     </div>
     <!-- /.content-section-a -->
 
-	<div class="content-section-b" id="projects">
+	<div class="content-section-b" id="projects" name="Projects">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6" style="width:100%">
@@ -227,7 +229,76 @@
 						<div class='topRightIcons'><a target="_blank" href="http://vtransparency.vtrans.opendata.arcgis.com/datasets?q=projects&sort_by=relevance"><i class="fa fa-database fa-lg fadatabase"></i><br/><span>data</span></a></div>
 					</div>
 					<div class="contentText">
-						<p>When areas of the system are identified for major repair or replacement they are routed through our project delivery bureau.  This group develops the concepts and the plans to put these projcts out to construction.  The following maps and additional information show what projects are comming in the future. </p>						
+						<p>When areas of the system are identified for major repair or replacement they are routed through our project delivery bureau. This group develops the concepts and the plans to put these projcts out to construction. </p>
+
+					</br>
+
+						<strong style="color: #12f">Bridge Projects</strong>
+
+						<p>In compliance with H.523 legislation, a priority ranking system for existing long structure projects, rehabilitation and replacement was developed based on the following factors:</p> </br>
+
+						<ul style="font-weight: bold;">
+							<li>Bridge Condition</li>
+							<li>Remaining Life</li>
+							<li>Functionality</li>
+							<li>Load Capacity and Use</li>
+							<li>Waterway Adequacy and Scour Susceptibility</li>
+							<li>Project Development and Momentum</li>
+							<li>Regional Input and Priority</li>
+							<li>Asset-Benefit Cost Factor</li>
+						</ul>
+
+						<p>Points are then summarized for each program, with the highest score receiving the top ranking. </p>
+
+					</br>						
+
+						<strong style="color: #12f">Pavement Projects</strong>
+
+						<p>The Pavement Management Section’s project prioritization system is illustrated below.</p>
+					</br>
+							<script>
+
+								var pieData = [
+										{
+											value: 20,
+											color:"#09F",
+											highlight: "#0df",
+											label: "Asset Condition (PCI)"
+										},
+										{
+											value: 20,
+											color: "#F90",
+											highlight: "#Fb5",
+											label: "RPC Rank"
+										},
+										{
+											value: 60,
+											color: "#F07",
+											highlight: "#F5A",
+											label: "Benefit-Cost"
+										}
+									];
+
+									window.onload = function(){
+										var ctx = document.getElementById("chart-area").getContext("2d");
+										window.myPie = new Chart(ctx).Pie(pieData);
+									};
+
+							</script>
+
+						</br>
+
+						<div id="canvas-holder" style="text-align: center;">
+							<canvas id="chart-area" width="200" height="200"/>
+						</div>
+
+					</br>
+
+						<strong style="color: #12f">Roadway Projects</strong>
+
+						<p>Annually, the VTrans Safety Section identifies the top 10 locations in need of safety improvements on the Vermont federal aid highway system. These locations were selected based on crash frequency, severity, and traffic volume.</p>
+
+						<p>The following maps and additional information show what projects are coming in the future. </p>						
 					</div>			
 					<div class="contentMaps">
 						<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
@@ -244,7 +315,7 @@
 						</div>
 						<ul>
 							<li><a target="_blank" href="http://apps.vtrans.vermont.gov/ProjectStatusReport/ProjectStatusReport.aspx">Project Status Report</a></li>
-							<li><a target="_blank" href="#">Mollis erat pharetra</a></li>
+							<li><a target="_blank" href="projects-metrics.html">Project Metrics</a></li>
 						</ul>
 					</div>
                 </div>
