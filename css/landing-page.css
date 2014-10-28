@@ -209,3 +209,15 @@ p.copyright {
     background-repeat: repeat-x;
 	margin: 8px 0px;
 }
+
+iframe {
+    border: 0;
+
+}
+/*
+iframe[seamless] {
+    background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
+    overflow: hidden;
+}
