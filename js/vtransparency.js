@@ -1,26 +1,31 @@
 $( document ).ready(function() {
 	
-	$("#btnPavement").click(function() {
+	$(".pavement").click(function() {
+		closeJumpToMenu()
 		$('html, body').animate({
 			scrollTop: $("#pavement").offset().top - 50
 		}, 1000);
 	});
-	$("#btnOps").click(function() {
+	$(".ops").click(function() {
+		closeJumpToMenu()
 		$('html, body').animate({
 			scrollTop: $("#ops").offset().top - 50
 		}, 1000);
 	});
-	$("#btnWho").click(function() {
+	$(".who").click(function() {
+		closeJumpToMenu()
 		$('html, body').animate({
 			scrollTop: $("#whocall").offset().top - 50
 		}, 1000);
 	});
-	$("#btnProjects").click(function() {
+	$(".projects").click(function() {
+		closeJumpToMenu()
 		$('html, body').animate({
 			scrollTop: $("#projects").offset().top - 50
 		}, 1000);
 	});
-	$("#btnBridge").click(function() {
+	$(".bridge").click(function() {
+		closeJumpToMenu()
 		$('html, body').animate({
 			scrollTop: $("#bridge").offset().top - 50
 		}, 1000);
@@ -31,4 +36,10 @@ $( document ).ready(function() {
 			scrollTop: $("body").offset().top
 		}, 400);
 	});
+	
+	function closeJumpToMenu(){
+		$('li.dropdown').removeClass("open");
+		$('#bs-example-navbar-collapse-1').collapse('hide');
+	}
+	
 });
