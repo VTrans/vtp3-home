@@ -227,3 +227,16 @@ iframe[seamless] {
 
 .sub-intro-header {padding-bottom:0px; background: url(../img/intro-bg.jpg) no-repeat center center; background-size: cover;}
 .intro-message {padding: 20px 0px;}
+
+.col-3-block {
+	float:left;
+	width:33%;
+	padding: 0 5px;
+}
+
+@media(max-width:545px) {
+	.col-3-block {
+	float:left;
+	width:100%;	
+	}
+}
