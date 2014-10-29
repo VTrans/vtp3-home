@@ -57,16 +57,16 @@
 							<a href="#" class="pavement" role="menuitem" tabindex="-1">Pavement</a>
 						   </li>
 						   <li role="menu">
-							<a href="#" class="projects" role="menuitem" tabindex="-1">Projects</a>
-						   </li>
-						   <li role="menu">
-							<a href="#" class="who" role="menuitem" tabindex="-1">Who Do I Call?</a>
-						   </li>
-						   <li role="menu">
 							<a href="#" class="bridge" role="menuitem" tabindex="-1">Bridge</a>
 						   </li>
 						   <li role="menu">
+							<a href="#" class="projects" role="menuitem" tabindex="-1">Projects</a>
+						   </li>						   						   
+						   <li role="menu">
 							<a href="#" class="ops" role="menuitem" tabindex="-1">Maintenance</a>
+						   </li>
+						   <li role="menu">
+							<a href="#" class="who" role="menuitem" tabindex="-1">Who Do I Call?</a>
 						   </li>
 						</ul>
 					</li>   
@@ -110,12 +110,6 @@
                             <li>
                                 <a href="#" class="btn btn-default btn-lg pavement"><i class="fa fa-road fa-fw"></i> <span class="network-name">Pavement</span></a>
                             </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-lg projects"><i class="fa fa-tachometer fa-fw"></i> <span class="network-name">Projects</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-lg who"><i class="fa fa-phone-square fa-fw"></i> <span class="network-name">Contacts</span></a>
-                            </li>
 							<li>
                                 <!--<a href="#" id="btnBridge" class="btn btn-default btn-lg"><i class="fa fa-car fa-fw"></i> <span class="network-name">Bridge</span></a>-->
                                 <a href="#" class="btn btn-default btn-lg bridge">                                	
@@ -123,8 +117,14 @@
                                 <span class="network-name">Bridges</span></a>
                             </li>
                             <li>
+                                <a href="#" class="btn btn-default btn-lg projects"><i class="fa fa-tachometer fa-fw"></i> <span class="network-name">Projects</span></a>
+                            </li>
+							<li>
                                 <a href="#" class="btn btn-default btn-lg ops"><i class="fa fa-wrench fa-fw"></i> <span class="network-name">Maintenance</span></a>
                             </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-lg who"><i class="fa fa-phone-square fa-fw"></i> <span class="network-name">Contacts</span></a>
+                            </li>                            
                         </ul>
                     </div>
                 </div>
@@ -201,7 +201,55 @@
     </div>
     <!-- /.content-section-a -->
 
-	<div class="content-section-b" id="projects">
+	<div class="content-section-b" id="bridge">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6" style="width:100%">
+					<div style="margin-top:-30px;">
+					<p class="toTopMargin"><a class='backtop' href='#top'><i class="fa fa-arrow-up fa-fw"></i> back to the top</a></p>
+                    <hr class="section-heading-spacer"/>
+					</div>
+                    <div class="clearfix"></div>
+					<div class="contentTopLeft">
+						<h3 class="section-heading" style="margin:0 0 8px 0px;">Bridge Closure Information</h3>
+					</div>
+					<div class="contentTopRight">
+						<div class='topRightIcons'><a href="contact.html?c=bridge"><i class="fa fa-user fa-lg fauser"></i><br/><span>contact</span></a></div>
+						<div class='topRightIcons'><a target="_blank" href="http://vtransparency.vtrans.opendata.arcgis.com/datasets?q=bridge&sort_by=relevance"><i class="fa fa-database fa-lg fadatabase"></i><br/><p class="breakss">open</br>data</p></a></div>
+					</div>
+					<div class="contentText">						
+						<p>Vermont has 2,712 long structures greater than 20 feet on interstate, state, and 
+						town routes and another 1,265 short structures greater than 6 to 20 feet on the state system that VTrans inspects. Inspections are conducted every 24 months on long structures and every 60 months on short structures unless conditions warrant more frequent inspections.</p>
+
+						<p>Just 8.32%  of our state structures and 2.56% interstate structures are considered structurally deficient by federal standards. Using national adjusted bridge data and report on FHWA’s website, Vermont ranks 28th among the 50 states for percentage of structurally deficient bridges. 
+						</p>
+					</div>			
+					<div class="contentMaps">
+						<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/mapsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Maps</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtrans.maps.arcgis.com/apps/webappviewer/index.html?id=b0d86b0133504e5796357af446bef3ca">Bridge Closures</a></li>
+							<li><a target="_blank" href="#">Vivamus imperdiet neque</a></li>
+						</ul>
+					</div>
+					<div class="contentReports">
+						<div class="reportsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/reportsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Other Information</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtransengineering.vermont.gov/bureaus/pdb/structures">Structures website</a></li>
+							<li><a target="_blank" href="http://vtransmaps.vermont.gov/bridgeclosures/bridgeclosurelisting.asp">Planned Bridge Closures Listing</a></li>							
+						</ul>
+					</div>
+                </div>				
+            </div>
+        </div>
+        <!-- /.container -->	
+    </div>
+    <!-- /.content-section-a -->
+	
+	<div class="content-section-a" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6" style="width:100%">
@@ -327,7 +375,51 @@
     </div>
     <!-- /.content-section-a -->
 
-    <div class="content-section-a" id="whocall">
+    <div class="content-section-b" id="ops">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6" style="width:100%">
+					<div style="margin-top:-30px;">
+					<p class="toTopMargin"><a class='backtop' href='#top'><i class="fa fa-arrow-up fa-fw"></i> back to the top</a></p>
+                    <hr class="section-heading-spacer"/>
+					</div>
+                    <div class="clearfix"></div>
+					<div class="contentTopLeft">
+						<h3 class="section-heading" style="margin:0 0 8px 0px;">Maintenance Activity Information</h3>
+					</div>
+					<div class="contentTopRight">
+						<div class='topRightIcons'><a href="contact.html?c=maintenance"><i class="fa fa-user fa-lg fauser"></i><br/><span>contact</span></a></div>
+						<div class='topRightIcons'><a target="_blank" href=""><i class="fa fa-database fa-lg fadatabase"></i><br/><p class="breakss">open</br>data</p></a></div>
+					</div>
+					<div class="contentText">
+						<p>Vermont has nine transportation maintenance districts who are responsible for all maintenance activities on state highways, and for providing technical assistance to municipalities located within their district boundaries. Each district is managed by a District Transportation Administrator (DTA).  The Maintenance Transportation Administrator (MTA) oversees all DTAs.</p>
+					</div>			
+					<div class="contentMaps">
+						<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/mapsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Maps</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtrans.maps.arcgis.com/apps/webappviewer/index.html?id=3bb2b31dce3049eca97b89f1051ac08d">Maintenance Top 10 Activities</a></li>
+							<li><a target="_blank" href="http://vtransoperations.vermont.gov/maintenance_districts">Maintenance Districts</a></li>
+						</ul>
+					</div>
+					<div class="contentReports">
+						<div class="reportsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/reportsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Other Information</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtransoperations.vermont.gov/">Maintenance & Operations website</a></li>
+							<li><a target="_blank" href="http://vtransoperations.vermont.gov/publications_and_maps">Operations Publications</a></li>
+						</ul>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->	
+    </div>
+    <!-- /.content-section-a -->
+	
+	<div class="content-section-a" id="whocall">
         <div class="container">			
             <div class="row">
                 <div class="col-lg-5 col-sm-6" style="width:100%">
@@ -374,99 +466,7 @@
         <!-- /.container -->	
     </div>
     <!-- /.content-section-a -->
-
-	<div class="content-section-b" id="bridge">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6" style="width:100%">
-					<div style="margin-top:-30px;">
-					<p class="toTopMargin"><a class='backtop' href='#top'><i class="fa fa-arrow-up fa-fw"></i> back to the top</a></p>
-                    <hr class="section-heading-spacer"/>
-					</div>
-                    <div class="clearfix"></div>
-					<div class="contentTopLeft">
-						<h3 class="section-heading" style="margin:0 0 8px 0px;">Bridge Closure Information</h3>
-					</div>
-					<div class="contentTopRight">
-						<div class='topRightIcons'><a href="contact.html?c=bridge"><i class="fa fa-user fa-lg fauser"></i><br/><span>contact</span></a></div>
-						<div class='topRightIcons'><a target="_blank" href="http://vtransparency.vtrans.opendata.arcgis.com/datasets?q=bridge&sort_by=relevance"><i class="fa fa-database fa-lg fadatabase"></i><br/><p class="breakss">open</br>data</p></a></div>
-					</div>
-					<div class="contentText">						
-						<p>Vermont has 2,712 long structures greater than 20 feet on interstate, state, and 
-						town routes and another 1,265 short structures greater than 6 to 20 feet on the state system that VTrans inspects. Inspections are conducted every 24 months on long structures and every 60 months on short structures unless conditions warrant more frequent inspections.</p>
-
-						<p>Just 8.32%  of our state structures and 2.56% interstate structures are considered structurally deficient by federal standards. Using national adjusted bridge data and report on FHWA’s website, Vermont ranks 28th among the 50 states for percentage of structurally deficient bridges. 
-						</p>
-					</div>			
-					<div class="contentMaps">
-						<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
-							<img style="float:left;" src="img/mapsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Maps</span>
-						</div>
-						<ul>
-							<li><a target="_blank" href="http://vtrans.maps.arcgis.com/apps/webappviewer/index.html?id=b0d86b0133504e5796357af446bef3ca">Bridge Closures</a></li>
-							<li><a target="_blank" href="#">Vivamus imperdiet neque</a></li>
-						</ul>
-					</div>
-					<div class="contentReports">
-						<div class="reportsHeader" style="width:90%; text-align:center; height:30px;">
-							<img style="float:left;" src="img/reportsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Other Information</span>
-						</div>
-						<ul>
-							<li><a target="_blank" href="http://vtransengineering.vermont.gov/bureaus/pdb/structures">Structures website</a></li>
-							<li><a target="_blank" href="http://vtransmaps.vermont.gov/bridgeclosures/bridgeclosurelisting.asp">Planned Bridge Closures Listing</a></li>							
-						</ul>
-					</div>
-                </div>				
-            </div>
-        </div>
-        <!-- /.container -->	
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-a" id="ops">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6" style="width:100%">
-					<div style="margin-top:-30px;">
-					<p class="toTopMargin"><a class='backtop' href='#top'><i class="fa fa-arrow-up fa-fw"></i> back to the top</a></p>
-                    <hr class="section-heading-spacer"/>
-					</div>
-                    <div class="clearfix"></div>
-					<div class="contentTopLeft">
-						<h3 class="section-heading" style="margin:0 0 8px 0px;">Maintenance Activity Information</h3>
-					</div>
-					<div class="contentTopRight">
-						<div class='topRightIcons'><a href="contact.html?c=maintenance"><i class="fa fa-user fa-lg fauser"></i><br/><span>contact</span></a></div>
-						<div class='topRightIcons'><a target="_blank" href=""><i class="fa fa-database fa-lg fadatabase"></i><br/><p class="breakss">open</br>data</p></a></div>
-					</div>
-					<div class="contentText">
-						<p>Vermont has nine transportation maintenance districts who are responsible for all maintenance activities on state highways, and for providing technical assistance to municipalities located within their district boundaries. Each district is managed by a District Transportation Administrator (DTA).  The Maintenance Transportation Administrator (MTA) oversees all DTAs.</p>
-					</div>			
-					<div class="contentMaps">
-						<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
-							<img style="float:left;" src="img/mapsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Maps</span>
-						</div>
-						<ul>
-							<li><a target="_blank" href="http://vtrans.maps.arcgis.com/apps/webappviewer/index.html?id=3bb2b31dce3049eca97b89f1051ac08d">Maintenance Top 10 Activities</a></li>
-							<li><a target="_blank" href="http://vtransoperations.vermont.gov/maintenance_districts">Maintenance Districts</a></li>
-						</ul>
-					</div>
-					<div class="contentReports">
-						<div class="reportsHeader" style="width:90%; text-align:center; height:30px;">
-							<img style="float:left;" src="img/reportsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Other Information</span>
-						</div>
-						<ul>
-							<li><a target="_blank" href="http://vtransoperations.vermont.gov/">Maintenance & Operations website</a></li>
-							<li><a target="_blank" href="http://vtransoperations.vermont.gov/publications_and_maps">Operations Publications</a></li>
-						</ul>
-					</div>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->	
-    </div>
-    <!-- /.content-section-a -->
-
+	
     <div class="banner">
 
         <div class="container">
@@ -535,14 +535,14 @@
 	
 	<!-- custom -->
     <script src="js/vtransparency.js"></script>
-<!--	<script>
+	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	  ga('create', 'UA-56064749-1', 'auto');
 	  ga('send', 'pageview');
-	</script> -->
+	</script> 
 	
 </body>
 
