@@ -48,6 +48,12 @@ h6 {
 
 }
 
+.intro-message > h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 30px;
+}
+
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
@@ -66,6 +72,11 @@ h6 {
     .intro-message > h1 {
         font-size: 3em;
     }
+    .intro-message > h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 20px;
+}
 
     ul.intro-social-buttons > li {
         display: block;
@@ -182,7 +193,7 @@ p.copyright {
 .fauser {color:#F09;}
 .fawebsite {color:#09F;}
 .topRightIcons {text-align:center;}
-.topRightIcons span {font-size:.8em;}
+.topRightIcons span, .topRightIcons p {font-size:.8em;}
 .contentMaps {float:left;min-width:250px;}
 .contentReports {float:left;min-width:250px;}
 
@@ -259,4 +270,8 @@ iframe[seamless] {
     text-decoration: underline;
     padding-bottom: 5px;
     font-size: 1.15em;
+}
+
+.breakss {
+    line-height: 1em;
 }
