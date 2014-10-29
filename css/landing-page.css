@@ -247,3 +247,16 @@ iframe[seamless] {
 	width:100%;	
 	}
 }
+
+.pct {
+    color: #F90;
+    font-style: italic;
+
+}
+
+.three-col-header-title {
+    color: #09F;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    font-size: 1.15em;
+}
