@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VTransparency</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="Chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="padding: 0 10px;" href="#"><img src='img/VTransLogo.png' height="50px" alt="VTrans" /></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+                        <a data-toggle="dropdown" href="">Jump To <i  style="position:relative; top:-2px;" class="fa fa-sort-desc fa-fw"></i></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+						   <li role="menu">
+							<a href="#" class="pavement" role="menuitem" tabindex="-1">Pavement</a>
+						   </li>
+						   <li role="menu">
+							<a href="#" class="bridge" role="menuitem" tabindex="-1">Bridge</a>
+						   </li>
+						   <li role="menu">
+							<a href="#" class="projects" role="menuitem" tabindex="-1">Projects</a>
+						   </li>						   						   
+						   <li role="menu">
+							<a href="#" class="ops" role="menuitem" tabindex="-1">Maintenance</a>
+						   </li>
+						   <li role="menu">
+							<a href="#" class="who" role="menuitem" tabindex="-1">Who Do I Call?</a>
+						   </li>
+						</ul>
+					</li>   
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>              
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+					<li>
+                        <a href="http://511vt.com" target="_blank">511</a>
+                    </li>
+					<li>
+                        <a href="http://vermont.gov" target="_blank" >Vermont.gov</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header -->
+    <div class="intro-header">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>VTransparency</h1>
+                        <h2>Public Information Portal</h2>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="#" class="btn btn-default btn-lg pavement"><i class="fa fa-road fa-fw"></i> <span class="network-name">Pavement</span></a>
+                            </li>
+							<li>
+                                <!--<a href="#" id="btnBridge" class="btn btn-default btn-lg"><i class="fa fa-car fa-fw"></i> <span class="network-name">Bridge</span></a>-->
+                                <a href="#" class="btn btn-default btn-lg bridge">                                	
+                                <img src="img/bridge.png" height="18px" style="margin-top: -5px; padding-right: 4px;">
+                                <span class="network-name">Bridges</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-lg projects"><i class="fa fa-tachometer fa-fw"></i> <span class="network-name">Projects</span></a>
+                            </li>
+							<li>
+                                <a href="#" class="btn btn-default btn-lg ops"><i class="fa fa-wrench fa-fw"></i> <span class="network-name">Maintenance</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-lg who"><i class="fa fa-phone-square fa-fw"></i> <span class="network-name">Contacts</span></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+    	<div class="container" style="margin-bottom:20px;">
+    		<div class="row">
+				<!--<img src="img/leaf.jpg" height=20px" /><hr class="section-heading-spacer " style="width:80%; margin-bottom:6px; margin-left:10%; "/>-->
+    			<div class="col-lg-5 col-sm-6" style="width:100%; text-align: center; clear:left;">
+    				<h1>About the Agency of Transportation</h1>
+    				<h4>Vermont has an extensive multimodal transportation system.</h4>
+    				<p>The Vermont Agency of Transportation (VTrans) maintains over 3,300 miles of road and 2,655 bridges.</p>
+    			<h4>Why Transparency?</h4>
+				<p>Transparency is imperative as it not only assures customer that VTrans is effectively managing the resources under its care, but holds VTrans accountable for its actions and decisions.</p></div>
+    		</div>
+    	</div>
+
+    <div class="content-section-a first-section" id="pavement">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6" style="width:100%">
+					<div style="margin-top:-30px;">
+					<p class="toTopMargin"><a class='backtop' href='#top'><i class="fa fa-arrow-up fa-fw"></i> back to the top</a></p>
+                    <hr class="section-heading-spacer"/>
+					</div>
+                    <div class="clearfix"></div>
+					<div class="contentTopLeft">
+						<h3 class="section-heading" style="margin:0 0 8px 0px;">Pavement Condition Information</h3>
+					</div>
+					<div class="contentTopRight">
+						<div class='topRightIcons'><a href="contact.html?c=pavement"><i class="fa fa-user fa-lg fauser"></i><br/><span>contact</span></a></div>
+						<div class='topRightIcons'><a target="_blank" href="http://vtransparency.vtrans.opendata.arcgis.com/datasets?q=pavement&sort_by=relevance"><i class="fa fa-database fa-lg fadatabase"></i><br/><p class="breakss">open</br>data</p></a></div>
+					</div>
+					<div class="contentText">
+						<p>VTrans is responsible for maintaining 3,200 miles of pavement across the state.  As part of this responsibility VTrans analyzes existing pavement conditions and develops a paving program. The following maps and additional information contain contain pavement condition and  project information.</p>		
+					</br>
+						<p>In 2009, more than half our roads were in “poor” or “very poor” condition. Today, 21% of our roads are still considered “very poor”, but we are making steady progress to move miles out of that category.</p>
+					</div>			
+					<div class="contentMaps">
+						<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/mapsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Maps</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtrans.maps.arcgis.com/apps/webappviewer/index.html?id=c4e33f213ee84cb4b69ab44cf73445d8">Pavement Condition</a></li>
+							<li><a target="_blank" href="#">Lorem ipsum dolor</a></li>
+						</ul>
+					</div>
+					<div class="contentReports">
+						<div class="reportsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/reportsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Other Information</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtransengineering.vermont.gov/bureaus/amp/asset-management">Asset Management website</a></li>
+							<li><a href="pavement-metrics.html">Pavement Metrics</a></li>
+						</ul>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->	
+    </div>
+    <!-- /.content-section-a -->
+
+	<div class="content-section-b" id="bridge">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6" style="width:100%">
+					<div style="margin-top:-30px;">
+					<p class="toTopMargin"><a class='backtop' href='#top'><i class="fa fa-arrow-up fa-fw"></i> back to the top</a></p>
+                    <hr class="section-heading-spacer"/>
+					</div>
+                    <div class="clearfix"></div>
+					<div class="contentTopLeft">
+						<h3 class="section-heading" style="margin:0 0 8px 0px;">Bridge Closure Information</h3>
+					</div>
+					<div class="contentTopRight">
+						<div class='topRightIcons'><a href="contact.html?c=bridge"><i class="fa fa-user fa-lg fauser"></i><br/><span>contact</span></a></div>
+						<div class='topRightIcons'><a target="_blank" href="http://vtransparency.vtrans.opendata.arcgis.com/datasets?q=bridge&sort_by=relevance"><i class="fa fa-database fa-lg fadatabase"></i><br/><p class="breakss">open</br>data</p></a></div>
+					</div>
+					<div class="contentText">						
+						<p>Vermont has 2,712 long structures greater than 20 feet on interstate, state, and 
+						town routes and another 1,265 short structures greater than 6 to 20 feet on the state system that VTrans inspects. Inspections are conducted every 24 months on long structures and every 60 months on short structures unless conditions warrant more frequent inspections.</p>
+
+						<p>Just 8.32%  of our state structures and 2.56% interstate structures are considered structurally deficient by federal standards. Using national adjusted bridge data and report on FHWA’s website, Vermont ranks 28th among the 50 states for percentage of structurally deficient bridges. 
+						</p>
+					</div>			
+					<div class="contentMaps">
+						<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/mapsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Maps</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtrans.maps.arcgis.com/apps/webappviewer/index.html?appid=353b30f44ca0463db812ff9924bb9eea">Bridge Closures</a></li>
+							<li><a target="_blank" href="#">Vivamus imperdiet neque</a></li>
+						</ul>
+					</div>
+					<div class="contentReports">
+						<div class="reportsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/reportsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Other Information</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtransengineering.vermont.gov/bureaus/pdb/structures">Structures website</a></li>
+							<li><a target="_blank" href="http://vtransmaps.vermont.gov/bridgeclosures/bridgeclosurelisting.asp">Planned Bridge Closures Listing</a></li>							
+						</ul>
+					</div>
+                </div>				
+            </div>
+        </div>
+        <!-- /.container -->	
+    </div>
+    <!-- /.content-section-a -->
+	
+	<div class="content-section-a" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6" style="width:100%">
+					<div style="margin-top:-30px;">
+					<p class="toTopMargin"><a class='backtop' href='#top'><i class="fa fa-arrow-up fa-fw"></i> back to the top</a></p>
+                    <hr class="section-heading-spacer"/>
+					</div>
+                    <div class="clearfix"></div>
+					<div class="contentTopLeft">
+						<h3 class="section-heading" style="margin:0 0 8px 0px;">Planned Project Information</h3>
+					</div>
+					<div class="contentTopRight">
+						<div class='topRightIcons'><a href="contact.html?c=projects"><i class="fa fa-user fa-lg fauser"></i><br/><span>contact</span></a></div>
+						<div class='topRightIcons'><a target="_blank" href="http://vtransparency.vtrans.opendata.arcgis.com/datasets?q=projects&sort_by=relevance"><i class="fa fa-database fa-lg fadatabase"></i><br/><p class="breakss">open</br>data</p></a></div>
+					</div>
+					<div class="contentText">
+						<p>When areas of the system are identified for major repair or replacement they are routed through our project delivery bureau. This group develops the concepts and the plans to put these projcts out to construction. </p>
+
+						<h4><i>Prioritization Methods:</i></h4>
+						<div class="container" style="padding: 15px;">
+							<div class="col-3-block">
+								<span class="three-col-header-title">Bridge Projects</span>
+
+								<p>In compliance with H.523 legislation, a priority ranking system for existing long structure projects, rehabilitation and replacement was developed based on the following factors:</p> </br>
+
+								<p>
+									Bridge Condition - <span class="pct">30 Points</span>
+								</p>
+								<p>
+									Remaining Life - <span class="pct">10 Points</span>
+								</p>
+								<p>
+									Functionality - <span class="pct">5 Points</span>
+								</p>
+								<p>
+									Load Capacity and Use - <span class="pct">15 Points</span>
+								</p>
+								<p>
+									Waterway Adequacy and Scour Susceptibility - <span class="pct">10 Points</span>
+								</p>
+								<p>
+									Project Development and Momentum - <span class="pct">5 Points</span>
+								</p>
+								<p>
+									Regional Input and Priority - <span class="pct">15 Points</span>
+								</p>
+								<p>
+									Asset-Benefit Cost Factor - <span class="pct">10 Points</span>
+								</p>
+							</br>
+
+								<p>Points are then summarized for each program, with the highest score receiving the top ranking. </p>
+							</div>
+
+							<div class="col-3-block">
+								<span class="three-col-header-title">Pavement Projects</span>
+
+								<p>The Pavement Management Section’s project prioritization system is illustrated below. Each component is defined in terms of its respective characteristics and the effect of the measure on a project’s overall rating.The system was developed in 2005 and continues to play an integral role in the development of our annual programs. </p>
+							</br>
+
+								<p>
+									Benefit Cost - <span class="pct">60%</span>
+								</p>
+								<p>
+									Pavement Condition Index - <span class="pct">20%</span>
+								</p>
+								<p>
+									Regional Planning Commission Rank - <span class="pct">20%</span>
+								</p>
+							</br>
+
+							</div>					
+
+							<div class="col-3-block">
+
+								<span class="three-col-header-title">Roadway Projects</span>
+							</br>
+								<strong><i>HSIP Projects</i></strong>
+
+								<p>Annually, the VTrans Safety Section identifies the top 10 locations in need of safety improvements on the Vermont federal aid highway system. These locations were selected based on crash frequency, severity, and traffic volume.</p>
+							</br>
+
+								<strong><i>HRRR Program</i></strong>
+
+								<p>
+									The High Risk Rural Roads (HRRR) program is a partnership with the Regional Planning Commissions (RPCs), FHWA, and the towns to implement low cost safety improvements on all of Vermont’s public highways. Based on crash data and local input, sites are identified, selected and prioritized by the RPCs, towns and VTrans.
+								</p>
+							</br>
+
+								<strong><i>Traffic Operations</i></strong>
+								<p>
+									Improving our roadway delineation by restriping our roadways is one of the best low cost initiatives for reducing crashes. Contracting out pavement markings allows our state maintenance forces to ensure that more miles of pavement markings are refreshed on an annual basis.
+								</p>
+
+
+							</div>
+					</div>
+
+						<p>The following maps and additional information show what projects are coming in the future. </p>						
+					</div>			
+					<div class="contentMaps">
+						<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/mapsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Maps</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtrans.maps.arcgis.com/apps/webappviewer/index.html?id=3767e8d53973469f859b825612b0bb75">Upcoming Construction Projects</a></li>
+							<li><a target="_blank" href="#">Vestibulum dapibus viverra</a></li>
+						</ul>
+					</div>
+					<div class="contentReports">
+						<div class="reportsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/reportsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Other Information</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://apps.vtrans.vermont.gov/ProjectStatusReport/ProjectStatusReport.aspx">Project Status Report</a></li>
+							<li><a href="projects-metrics.html">Project Metrics</a></li>
+						</ul>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->	
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b" id="ops">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6" style="width:100%">
+					<div style="margin-top:-30px;">
+					<p class="toTopMargin"><a class='backtop' href='#top'><i class="fa fa-arrow-up fa-fw"></i> back to the top</a></p>
+                    <hr class="section-heading-spacer"/>
+					</div>
+                    <div class="clearfix"></div>
+					<div class="contentTopLeft">
+						<h3 class="section-heading" style="margin:0 0 8px 0px;">Maintenance Activity Information</h3>
+					</div>
+					<div class="contentTopRight">
+						<div class='topRightIcons'><a href="contact.html?c=maintenance"><i class="fa fa-user fa-lg fauser"></i><br/><span>contact</span></a></div>
+						<div class='topRightIcons'><a target="_blank" href=""><i class="fa fa-database fa-lg fadatabase"></i><br/><p class="breakss">open</br>data</p></a></div>
+					</div>
+					<div class="contentText">
+						<p>Vermont has nine transportation maintenance districts who are responsible for all maintenance activities on state highways, and for providing technical assistance to municipalities located within their district boundaries. Each district is managed by a District Transportation Administrator (DTA).  The Maintenance Transportation Administrator (MTA) oversees all DTAs.</p>
+					</div>			
+					<div class="contentMaps">
+						<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/mapsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Maps</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtrans.maps.arcgis.com/apps/webappviewer/index.html?id=3bb2b31dce3049eca97b89f1051ac08d">Maintenance Top 10 Activities</a></li>
+							<li><a target="_blank" href="http://vtransoperations.vermont.gov/maintenance_districts">Maintenance Districts</a></li>
+						</ul>
+					</div>
+					<div class="contentReports">
+						<div class="reportsHeader" style="width:90%; text-align:center; height:30px;">
+							<img style="float:left;" src="img/reportsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Other Information</span>
+						</div>
+						<ul>
+							<li><a target="_blank" href="http://vtransoperations.vermont.gov/">Maintenance & Operations website</a></li>
+							<li><a target="_blank" href="http://vtransoperations.vermont.gov/publications_and_maps">Operations Publications</a></li>
+							<li>
+								<a href="maintenance-metrics.html">Maintenance Metrics</a>
+							</li>
+						</ul>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->	
+    </div>
+    <!-- /.content-section-a -->
+	
+	<div class="content-section-a" id="whocall">
+        <div class="container">			
+            <div class="row">
+                <div class="col-lg-5 col-sm-6" style="width:100%">
+					<div style="margin-top:-30px;">
+					<p class="toTopMargin"><a class='backtop' href='#top'><i class="fa fa-arrow-up fa-fw"></i> back to the top</a></p>
+                    <hr class="section-heading-spacer"/>
+					</div>
+                    <div class="clearfix"></div>
+					<div class="contentTopLeft">
+						<h3 class="section-heading" style="margin:0 0 8px 0px;">Contact Information</h3>
+					</div>
+					<div class="section-content">
+						<div class="contentTopRight">
+							<div class='topRightIcons'><a href="contact.html?c=who"><i class="fa fa-user fa-lg fauser"></i><br/><span>contact</span></a></div>
+							<div class='topRightIcons'><a target="_blank" href="http://vtransparency.vtrans.opendata.arcgis.com/datasets?q=contacts&sort_by=relevance"><i class="fa fa-database fa-lg fadatabase"></i><br/><p class="breakss">open</br>data</p></a></div>
+						</div>
+						<div class="contentText">
+							<p> VTrans is a large organization with many different areas of expertise.  Knowing who to contact about your issue is difficult due to the complex nature of our business. We've created an interactive map that will allow you to zoom in to where you have a question and provide contact information for that location. </p>
+						</br>
+							<p>The following maps and links provide insight into the right contact for the issue and region that you are interested in. </p>						
+						</div>			
+						<div class="contentMaps">
+							<div class="mapsHeader" style="width:90%; text-align:center; height:30px;">
+								<img style="float:left;" src="img/mapsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Maps</span>
+							</div>
+							<ul>
+								<li><a target="_blank" href="http://vtrans.maps.arcgis.com/apps/webappviewer/index.html?id=22c56fb498d147319f17860c5ed00796">Who Do I Call?</a></li>
+								<li><a target="_blank" href="#">Donec in condimentum</a></li> 
+							</ul>
+						</div>
+						<div class="contentReports">
+							<div class="reportsHeader" style="width:90%; text-align:center; height:30px;">
+								<img style="float:left;" src="img/reportsHeader.png" width="50px" height="30px"/><span style="margin-left:-25px; line-height:2;">Other Information</span>
+							</div>
+							<ul>
+								<li><a target="_blank" href="http://vtrans.vermont.gov/about-us/contact">VTrans Contact page</a></li>
+								<li><a href="http://vtrans.vermont.gov/about-us">VTrans Organizational Chart</a></li>
+								<li><a target="_blank" href="http://dmv.vermont.gov/contact">DMV</a></li>
+								<li><a target="_blank" href="http://vtransoperations.vermont.gov/about/contacts">District Offices</a></li>
+							</ul>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->	
+    </div>
+    <!-- /.content-section-a -->
+	
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Connect with VTrans:</h3> 
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+						<li>
+                            <a target="_blank" href="https://www.facebook.com/pages/VTrans/143848835653728" class="btn btn-default btn-sm"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/511VT" class="btn btn-default btn-sm"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+						<li>
+                            <a target="_blank" href="http://www.youtube.com/user/VTransTV" class="btn btn-default btn-sm"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a>
+                        </li>
+						<li>
+                            <a target="_blank" href="http://www.flickr.com/photos/vtrans/sets/" class="btn btn-default btn-sm"><i class="fa fa-flickr fa-fw"></i> <span class="network-name">Flickr</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class='backtop'>Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>                        
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+						<li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a target="_blank" href="http://vermont.gov">Vermont.gov</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small" style="text-align:center;">A Vermont Government Website <a target="_blank" href="http://www.vermont.gov/portal/policies/">Copyright © 2014 State of Vermont</a>. All rights reserved<br /><a target="_blank" href="http://www.vermont.gov/portal/policies/accessibility.php">Accessibility Policy</a> - <a target="_blank" href="http://www.vermont.gov/portal/policies/privacy.php">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- custom -->
+    <script src="js/vtransparency.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-56064749-1', 'auto');
+	  ga('send', 'pageview');
+	</script> 
+	
+</body>
+
+</html>
