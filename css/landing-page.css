@@ -276,4 +276,7 @@ iframe[seamless] {
     line-height: 1em;
 }
 
+.content-list-links {
+    font-size: 1.15em;
+}
 .first-section { border-top:1px solid #e7e7e7;}
