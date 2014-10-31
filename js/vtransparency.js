@@ -44,7 +44,7 @@ $( document ).ready(function() {
 	}
 	
 	$("#contactForm").load(function() {
-		$('#formLoad').html("");
+		$('#formLoad').css("display","none");
 	});
 	
 });

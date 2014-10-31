@@ -228,14 +228,6 @@ iframe {
     border: 0;
 
 }
-/*
-iframe[seamless] {
-    background-color: transparent;
-    border: 0px none transparent;
-    padding: 0px;
-    overflow: hidden;
-}
-*/
 
 .pageContent {padding:50px 0;}
 
@@ -281,3 +273,8 @@ iframe[seamless] {
 
 .first-section { border-top:1px solid #e7e7e7;}
 
+
+/*** contact page ***/
+.pageContentContact {padding:0 0 50px 0;}
+#formLoad {margin-top:50px;}
+/*** end contact page ***/
