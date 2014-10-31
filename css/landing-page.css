@@ -274,7 +274,9 @@ iframe {
 .first-section { border-top:1px solid #e7e7e7;}
 
 
-/*** contact page ***/
-.pageContentContact {padding:0 0 50px 0;}
+
+/*** sub pages ***/
+.subPageContent {padding:0;}
+.pageContentContact {padding:0;}
 #formLoad {margin-top:50px;}
-/*** end contact page ***/
+/*** end sub pages ***/
